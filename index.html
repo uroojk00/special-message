@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Message</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('background.jpg') no-repeat center center/cover; /* Background image */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        .note {
+            width: 90%;
+            max-width: 800px;
+            padding: 40px;
+            background: rgba(255, 250, 205, 0.9); /* Light yellow with transparency */
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            text-align: center;
+            overflow: hidden;
+        }
+        .name {
+            font-size: 60px;  
+            color: #fff; /* White color for "Dear Huzaif" */
+            font-family: "Lucida Handwriting", cursive;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #4c4c4c; /* Light black outline */
+            opacity: 0;  
+            animation: fadeIn 1s forwards;
+        }
+        .text {
+            font-size: 22px;  
+            color: #808080; /* Grey color text */
+            font-family: "Perpetua", serif; /* Perpetua font */
+            font-weight: bold;
+            opacity: 0;  
+            animation: fadeIn 1s forwards;
+        }
+        /* Line-by-line animation */
+        .line1 { animation-delay: 1s; }
+        .line2 { animation-delay: 2s; }
+        .line3 { animation-delay: 3s; }
+        
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="note">
+    <div class="name line1">Dear Huzaif,</div>
+    <div class="text line2">You are the best person I have ever met!</div>
+    <div class="text line3">You always make my day special! I can't go even a day without seeing you. The moment I hold your hand, butterflies start fluttering in my stomach. And when you kiss my neck, that’s the best feeling in the world. I want to share every little thing with you because you’re the one who truly understands me. More than anything, I feel so proud to have you in my life. You’re my happiness, my comfort, and my favorite person !</div>
+</div>
+
+</body>
+</html>
